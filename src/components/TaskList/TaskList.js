@@ -7,7 +7,7 @@ import css from "./TaskList.module.css";
 
 const getVisibleTasks = (tasks, statusFilter) => {
     switch (statusFilter) {
-        case statusFilter.active:
+        case statusFilters.active:
             return tasks.filter(task => !task.completed);
         case statusFilters.complated:
             return tasks.filter(task => task.completed);
